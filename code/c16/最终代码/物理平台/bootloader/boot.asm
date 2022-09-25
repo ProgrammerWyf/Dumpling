@@ -63,7 +63,7 @@ SectorBalance		equ	23
 
 	jmp	short Label_Start
 	nop
-	BS_OEMName	db	'MINEboot'
+	BS_OEMName	db	'WYF'
 	BPB_BytesPerSec	dw	0x200
 	BPB_SecPerClus	db	0x8
 	BPB_RsvdSecCnt	dw	0x1
@@ -309,8 +309,8 @@ Odd			db	0
 
 ;=======	display messages
 
-StartBootMessage:	db	"Start Boot"
-NoLoaderMessage:	db	"ERROR:No LOADER Found"
+StartBootMessage:	db	"Starting Dumpling v0.01"
+NoLoaderMessage:	db	"FATAL:LORDER.BIN NOT FOUND.STOP."
 LoaderFileName:		db	"LOADER  BIN",0
 
 ;=======	fill zero until whole sector
